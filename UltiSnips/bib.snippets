@@ -1,0 +1,149 @@
+snippet @article! "Article" bA
+@article{${1:ABCDEF},
+  author       = {${2:<Last, First and Last, First and ...>}},
+  year         = {${3:<YYYY>}},
+  title        = {${4:<Title in Title Case>}},
+  journal      = {${5:<Journal title>}},
+  volume       = {${6:<Volume>}},
+  number       = {${7:<Issue>}},
+  pages        = {${8:<pp--pp>}},
+  doi          = {${9:<e.g. 10.1000/xyz123>}},
+}
+$0
+endsnippet
+
+snippet @book! "Book" bA
+@book{${1:ABCDEF},
+  author       = {${2:<Last, First and Last, First and ...>}},
+  year         = {${3:<YYYY>}},
+  title        = {${4:<Title in Title Case>}},
+  publisher    = {${5:Publisher}},
+  address      = {${6:<City, Country>}},
+  doi          = {${9:<e.g. 10.1000/xyz123>}}
+}
+$0
+endsnippet
+
+snippet @booklet! "Booklet" bA
+@booklet{${1:ABCDEF},
+  author       = {${2:<Last, First and Last, First and ...>}},
+  year         = {${3:<YYYY>}},
+  title        = {${4:<Title in Title Case>}},
+  howpublished = {${5:Publisher}}
+}
+$0
+endsnippet
+
+snippet @inbook! "Book chapter" bA
+@inbook{${1:ABCDEF},
+  author       = {${2:<Last, First and Last, First and ...>}},
+  year         = {${3:<YYYY>}},
+  title        = {${4:<Title in Title Case>}},
+  booktitle    = {${5:<Booktitle in <Title in Title Case> Case>}},
+  pages        = {${6:<pp--pp>}},
+  editor       = {${7:<Last, First and Last, First and ...>}},
+  publisher    = {${8:<Publisher>}},
+  address      = {${9:<City, Country>}}
+}
+$0
+endsnippet 
+
+snippet @incollection! "Collection" bA
+@incollection{${1:ABCDEF},
+  author       = {${2:<Last, First and Last, First and ...>}},
+  year         = {${3:<YYYY>}},
+  title        = {${4:<Title in Title Case>}},
+  booktitle    = {${5:<Booktitle in <Title in Title Case> Case>}},
+  pages        = {${6:<pp--pp>}},
+  editor       = {${7:<Last, First and Last, First and ...>}},
+  publisher    = {${8:<Publisher>}},
+  address      = {${9:<City, Country>}},
+}
+$0
+endsnippet 
+
+snippet @inproceedings! "Conference proceedings" bA
+@inproceedings{${1:ABCDEF},
+  author       = {${2:<Last, First and Last, First and ...>}},
+  year         = {${3:<YYYY>}},
+  title        = {${4:<Title in Title Case>}},
+  series       = {${5:<Series>}},
+  booktitle    = {${6:<Booktitle in <Title in Title Case> Case>}},
+  pages        = {${7:<pp--pp>}},
+  editor       = {${8:<Last, First and Last, First and ...>}},
+  publisher    = {${9:<Publisher>}},
+  address      = {${10:<City, Country>}}},
+}
+$0
+endsnippet
+
+snippet @mastersthesis! "MA thesis" bA
+@mastersthesis{${1:ABCDEF},
+  author       = {${2:<Last, First and Last, First and ...>}},
+  year         = {${3:<YYYY>}},
+  title        = {${4:<Title in Title Case>}},
+  school       = {${5:<University>}},
+  address      = {${10:<City, Country>}},
+}
+$0
+endsnippet
+
+snippet @misc! "Misc" bA
+@misc{${1:ABCDEF},
+  author       = {${2:<Last, First and Last, First and ...>}},
+  year         = {${3:<YYYY>}},
+  title        = {${4:<Title in Title Case>}},
+  howpublished = {${5:Publisher}},
+  note	       = {${6:Note}}
+}
+$0
+endsnippet
+
+snippet @phdthesis! "PhD thesis" bA
+@phdthesis{${1:ABCDEF},
+  author       = {${2:<Last, First and Last, First and ...>}},
+  year         = {${3:<YYYY>}},
+  title        = {${4:<Title in Title Case>}},
+  school       = {${5:<University>}},
+  address      = {${10:<City, Country>}},
+}
+$0
+endsnippet
+
+snippet @proceedings! "Conference proceedings" bA
+@proceedings{${1:ABCDEF},
+  year         = {${3:<YYYY>}},
+  title        = {${4:<Title in Title Case>}},
+  series       = {${5:<Series>}},
+  title        = {${6:<Title in Title Case>}},
+  pages        = {${7:<pp--pp>}},
+  editor       = {${8:<Last, First and Last, First and ...>}},
+  publisher    = {${9:<Publisher>}},
+  address      = {${10:<City, Country>}},
+}
+$0
+endsnippet
+
+snippet @techreport! "Technical report" bA
+@techreport{${1:ABCDEF},
+  author       = {${2:<Last, First and Last, First and ...>}},
+  year         = {${3:<YYYY>}},
+  title        = {${4:<Title in Title Case>}},
+  series       = {${5:<Series>}},
+  institution  = {${6:<Institution>}},
+  number       = {${7:<Issue>}},
+  address      = {${8:<City, Country>}}
+}
+$0
+endsnippet
+
+snippet @unpublished! "Unpublished" bA
+@unpublished{${1:ABCDEF},
+  author       = {${2:<Last, First and Last, First and ...>}},
+  year         = {${3:<YYYY>}},
+  title        = {${4:<Title in Title Case>}},
+  url          = {${5:<https://...>}},
+}
+$0
+endsnippet
+

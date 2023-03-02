@@ -1,0 +1,127 @@
+snippet r! "Referee report" bA
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{stmaryrd}
+\usepackage{proof}
+\usepackage{longtable}
+\usepackage{enumerate}
+\usepackage{longtable}
+\usepackage{qtree}
+\usepackage{wasysym}
+\usepackage[all]{xy}
+\usepackage{marvosym}
+\usepackage{hyperref}
+
+\usepackage[a4paper, margin=1in]{geometry}
+
+\usepackage{parskip}
+
+\frenchspacing
+
+\begin{document}
+
+{
+  \large 
+  Report for the \emph{$1} on:\\\\[2ex]
+  \textbf{$2}
+}
+
+\vspace{2ex}
+
+$0
+\end{document}
+endsnippet
+
+snippet a! "Article" bA
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage{amssymb,amsmath, amsthm}
+\usepackage{stmaryrd}
+\usepackage{proof}
+
+\usepackage{longtable}
+
+\setlength{\LTpre}{0pt}
+\setlength{\LTpost}{0pt}
+
+\usepackage{graphicx}
+
+\usepackage{enumerate}
+
+\usepackage{hyperref}
+
+\usepackage[all]{xy}
+
+\usepackage{biblatex}
+\addbibresource{references.bib}
+
+\newtheorem*{observation}{Observation}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem*{claim}{Claim}
+
+\frenchspacing
+
+\title{$1}
+
+\author{%
+  Johannes Korbmacher \\
+  Utrecht University \\
+  \texttt{j.korbmacher@uu.nl}}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+$0
+
+\printbibliography
+
+\end{document}
+
+endsnippet
+
+snippet s! "New section" bA
+\section{$1}
+\label{sec:$1}
+
+$0
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../main"
+%%% End:
+endsnippet
+
+global !p
+def fix_indent(snip):
+    vim.eval('feedkeys("\<c-f>")')
+endglobal
+
+post_expand "fix_indent(snip)"
+snippet it "Individual item" b
+\item $0
+endsnippet
+
+post_expand "fix_indent(snip)"
+snippet new "newpage" b
+\newpage
+
+$0
+endsnippet
+
+snippet fn "Footnote"
+\footnote{%
+$1
+}
+$0
+endsnippet
